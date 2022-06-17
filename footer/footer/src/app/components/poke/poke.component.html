@@ -1,0 +1,21 @@
+<div class="list-pokeNames">
+  <h2>List of pokemons</h2>
+  <div class="card" *ngFor="let poke of pokemons.results; let i = index">
+    <img
+      class="card-img-top"
+      src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{{
+        i + 1
+      }}.png"
+      alt="poke-sprite"
+    />
+    <div class="card-body">
+      <h4 class="card-title">{{ poke.name }}</h4>
+    </div>
+  </div>
+  <div class="poke-details" *ngIf="pokemonChosen" [class.active]="pokeDetails">
+    <button class="button-close" (click)="togglePokeDetails()">Close</button>
+  </div>
+  <button class="button-loadMore" (click)="loadMorePokemons()">
+    Load more
+  </button>
+</div>

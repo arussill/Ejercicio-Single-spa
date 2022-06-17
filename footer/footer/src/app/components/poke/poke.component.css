@@ -1,0 +1,50 @@
+.list-pokeNames {
+  text-align: center;
+}
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-block-start: 2rem;
+}
+img {
+  width: 150px;
+}
+p {
+  font-size: 2rem;
+}
+button {
+  cursor: pointer;
+}
+
+.poke-details {
+  position: fixed;
+  top: 0;
+  left: 70%;
+  bottom: 0;
+  right: 0;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all ease-out 0.5s;
+  transform: translateX(100%);
+}
+.poke-details.active {
+  transform: translateX(0);
+}
+
+.button-close {
+  width: 80%;
+  padding: 0.5rem 0;
+  border-radius: 4rem;
+  margin-inline: auto;
+}
+
+.button-loadMore {
+  width: 20%;
+  padding: 0.5rem 0;
+  border-radius: 4rem;
+  margin-inline: auto;
+  margin-block-end: 5rem;
+  font-size: 1.6rem;
+}
